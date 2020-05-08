@@ -1140,6 +1140,29 @@ a.back-to-top:hover, a.back-to-top:focus {
   overflow: hidden;
 }
 
+@media (max-width: 570px) {
+  .team-item{
+    margin: 25px auto;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+    height: 280px;
+    width: 400px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.17);
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+  }
+  .team-item .team-img {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 250px;
+    width: 380px;
+  }
+}
+
 .team-item .team-overlay {
   height: 100%;
   position: absolute;
