@@ -850,6 +850,16 @@ a.back-to-top:hover, a.back-to-top:focus {
   background: #ce400d;
 }
 
+@media (max-width: 570px) {
+  .landing{
+    height: 800px;
+  }
+  .landing-logo{
+    margin-top: 260px;
+  }
+}
+
+
 /* only small tablets */
 
 
