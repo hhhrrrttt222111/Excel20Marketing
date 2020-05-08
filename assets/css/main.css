@@ -47,10 +47,12 @@ p {
   font-size: 16px;
 }
 
-.navbar-toggler:focus {
+.navbar-toggler-icon:focus, .navbar-toggler-icon {
   outline: none;
   box-shadow: none;
+  display: none;
 }
+
 
 ul, ol {
   list-style: outside none none;
