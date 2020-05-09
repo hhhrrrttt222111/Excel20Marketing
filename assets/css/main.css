@@ -44,8 +44,15 @@ p {
   font-weight: 400;
   font-family: 'Lato', sans-serif;
   margin: 0px;
-  font-size: 14px;
+  font-size: 16px;
 }
+
+.navbar-toggler-icon:focus, .navbar-toggler-icon {
+  outline: none;
+  box-shadow: none;
+  display: none;
+}
+
 
 ul, ol {
   list-style: outside none none;
@@ -56,6 +63,7 @@ ul, ol {
 ul li, ol li {
   list-style: none;
 }
+
 
 .hero-heading {
   font-size: 40px;
@@ -529,7 +537,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .section-padding {
-  padding: 60px 0;
+  padding: 10px 0;
 }
 
 .no-padding {
@@ -637,6 +645,8 @@ a.back-to-top:hover, a.back-to-top:focus {
   position: relative;
   padding: 0px;
 }
+
+
 
 .navbar-brand img {
   width: 75%;
@@ -853,56 +863,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 
 /* only small tablets */
-@media (min-width: 768px) and (max-width: 991px) {
-  #nav-main li a.nav-link {
-    padding-top: 18px;
-  }
-}
 
-.navbar-toggler {
-  display: none;
-}
-
-.mobile-menu {
-  display: none;
-}
-
-.slicknav_menu {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar-header {
-    width: 100%;
-  }
-  .navbar-brand {
-    position: absolute;
-    padding: 15px 15px;
-    top: 0;
-  }
-  .navbar-brand img {
-    width: 75%;
-  }
-  #mobile-menu {
-    display: none;
-  }
-  .slicknav_menu {
-    display: block;
-    text-align: center;
-  }
-  .slicknav_nav .active a {
-    background: #ce400d;
-    color: #fff;
-  }
-  .slicknav_nav a:hover, .slicknav_nav .active {
-    color: #ce400d;
-    background: #f5f5f5;
-  }
-  .slicknav_nav .dropdown li a.active {
-    background: #f5f5f5;
-    color: #ce400d;
-  }
-}
 
 .about-item {
   padding: 10px;
@@ -1030,182 +991,6 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 /* Schedule Area */
-#schedules {
-  background: #f3f4f3;
-}
-
-#schedule-tab {
-  position: relative;
-}
-
-.schedule .schedule-tab-title {
-  margin-bottom: 35px;
-}
-
-.schedule .schedule-tab-title .nav-tabs {
-  background: #ffffff;
-}
-
-.schedule .schedule-tab-title .nav-tabs .nav-link {
-  border-radius: 0px;
-  position: relative;
-  cursor: pointer;
-  height: 90px;
-  width: 255px;
-  border-bottom: 1px solid #e5e5e5;
-  transition: all 500ms ease;
-  padding: 20px 20px;
-}
-
-.schedule .schedule-tab-title .nav-tabs .nav-item.show .nav-link, .schedule .schedule-tab-title .nav-tabs .nav-link.active,
-.schedule .schedule-tab-title .nav-tabs .nav-item .nav-link:hover {
-  background: #ce400d;
-  border: 1px solid #ce400d;
-  transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -o-transition: all 0.3s ease-in-out 0s;
-}
-
-.schedule .schedule-tab-title .nav-tabs .nav-item.show .nav-link h4, .schedule .schedule-tab-title .nav-tabs .nav-link.active h4,
-.schedule .schedule-tab-title .nav-tabs .nav-item .nav-link:hover h4 {
-  color: #fff;
-}
-
-.schedule .schedule-tab-title .nav-tabs .nav-item.show .nav-link h5, .schedule .schedule-tab-title .nav-tabs .nav-link.active h5,
-.schedule .schedule-tab-title .nav-tabs .nav-item .nav-link:hover h5 {
-  color: #fff;
-}
-
-.schedule .schedule-tab-title .item-text h4 {
-  font-size: 15px;
-  color: #2f323c;
-  line-height: 22px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.schedule .schedule-tab-title .item-text h5 {
-  font-size: 14px;
-  color: #848484;
-  line-height: 16px;
-  font-weight: 400;
-  text-transform: capitalize;
-}
-
-.schedule .schedule-tab-content .tab-content {
-  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.1);
-}
-
-.schedule .schedule-tab-content .card {
-  border: none;
-}
-
-.schedule .show .card-body {
-  background: #f3f4f3;
-}
-
-.schedule .card-header {
-  border: none;
-  cursor: pointer;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-}
-
-.schedule .card-header .images-box {
-  width: 70px;
-  height: 70px;
-  float: left;
-  margin-right: 20px;
-}
-
-.schedule .card-header .images-box img {
-  border-radius: 50%;
-}
-
-.schedule .card-header .time {
-  color: #777777;
-  font-size: 13px;
-  margin-bottom: 5px;
-}
-
-.schedule .card-header h4 {
-  font-weight: 700;
-  font-size: 18px;
-  color: #212121;
-  margin-bottom: 8px;
-}
-
-.schedule .card-header .name {
-  position: relative;
-  font-size: 14px;
-  color: #777777;
-  font-weight: 500;
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-.schedule .card-body {
-  padding: 15px 70px 15px 110px;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-}
-
-.schedule .card-body .location {
-  font-size: 13px;
-  color: #777777;
-}
-
-.schedule .card-body .location span {
-  color: #ce400d;
-  margin-right: 5px;
-}
-
-.accordion .card {
-  border-radius: 0px;
-  margin-bottom: -2px;
-}
-
-.accordion .header-title {
-  position: relative;
-}
-
-.accordion .header-title:after {
-  font-family: "LineIcons";
-  content: "\e93a";
-  position: absolute;
-  right: 10px;
-  color: #999;
-  top: 50%;
-  line-height: 1;
-  padding: 0px 5px;
-  margin-top: -7px;
-}
-
-.accordion .collapsed:after {
-  content: "\e940";
-}
-
-.accordion .card-header {
-  background: transparent;
-  cursor: pointer;
-  padding: 0;
-}
-
-.accordion .card-header i {
-  color: #ce400d;
-  width: 40px;
-  height: 40px;
-  display: inline-block;
-  line-height: 40px;
-  text-align: center;
-  margin-right: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.accordion .card-body {
-  padding-left: 56px;
-}
 
 /* Services Item */
 .services {
@@ -1365,6 +1150,29 @@ a.back-to-top:hover, a.back-to-top:focus {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+}
+
+@media (max-width: 570px) {
+  .team-item{
+    margin: 25px auto;
+    padding: 10px;
+    border-radius: 4px;
+    position: relative;
+    height: 280px;
+    width: 400px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.17);
+    transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+  }
+  .team-item .team-img {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 250px;
+    width: 380px;
+  }
 }
 
 .team-item .team-overlay {
@@ -1620,66 +1428,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #fff;
 }
 
-/* Subscribe Form */
-#subscribe {
-  background: #f2f2f2;
-}
 
-.subscribe-inner {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.subscribe-inner .subscribe-title {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
-.subscribe-inner p {
-  color: #888;
-  margin-bottom: 30px;
-}
-
-.subscribe-inner .sub-btn {
-  margin: 0;
-  width: 12rem;
-  padding: 18px 40px;
-  min-width: 12rem;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.subscribe-inner .sub-btn i {
-  margin-right: 5px;
-}
-
-.subscribe-inner .form-control {
-  position: relative;
-  background: #fff;
-  border: 1px solid #ce400d;
-  border-radius: 0px;
-  box-shadow: none;
-  color: #888999;
-  height: 55px;
-  margin-right: -1px;
-  width: 90%;
-}
-
-.subscribe-inner .form-control:focus {
-  color: #212121;
-  background-color: #fff;
-  border-color: #ce400d;
-  outline: 0;
-}
-
-.subscribe-inner .form-inline {
-  position: relative;
-  margin-bottom: 30px;
-  margin: 0 auto;
-  width: 100%;
-}
 
 /* Contact Forme */
 #google-map-area {
@@ -1803,6 +1552,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .footer-area .footer-social li {
   display: inline-block;
+  
 }
 
 .footer-area .footer-social li a {
@@ -1838,13 +1588,6 @@ a.back-to-top:hover, a.back-to-top:focus {
   background: #0073b1;
 }
 
-.footer-area .footer-social li .foursqare:hover {
-  background: #25a0ca;
-}
-
-.footer-area .footer-social li .google-plus:hover {
-  background: #d34836;
-}
 
 .footer-area .footer-text p {
   font-size: 14px;
@@ -1950,96 +1693,6 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #fff;
 }
 
-#copyright {
-  background: #0b0b0b;
-  text-align: center;
-}
-
-#copyright p {
-  line-height: 42px;
-  color: #fff;
-  margin: 0;
-}
-
-#copyright p a {
-  color: #fff;
-}
-
-#copyright p a:hover {
-  color: #ce400d;
-}
-
-/* ==========================================================================
-   Countdown Style Start
-   ========================================================================== */
-.countdown-timer .heading-count {
-  padding: 10px 68px;
-}
-
-.countdown-timer .heading-count h2 {
-  font-size: 40px;
-  color: #212121;
-  text-transform: uppercase;
-  line-height: 48px;
-}
-
-.countdown-timer .heading-count h4 {
-  font-size: 24px;
-  font-weight: 300;
-  color: #fff;
-  margin-top: 30px;
-}
-
-.countdown-timer .heading-count h4 span {
-  background: #212121;
-  padding: 7px 15px;
-  border-radius: 4px;
-}
-
-.countdown-timer .heading-count p {
-  font-size: 14px;
-  color: #212121;
-  line-height: 30px;
-}
-
-.time-count div {
-  text-align: center;
-}
-
-.time-entry {
-  display: inline-block;
-  min-width: 120px;
-  margin: 15px;
-  height: 110px;
-  padding: 20px;
-  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  background: #fff;
-  text-align: center;
-  font-weight: 400;
-  color: #212121;
-  font-size: 16px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 22px;
-}
-
-.time-entry span {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 700;
-  display: block;
-  color: #212121;
-  margin-bottom: 10px;
-}
-
-.time-entry:first-child {
-  border-left: none;
-}
-
-.time-countdown {
-  margin: 15px 0px 50px 0;
-}
 
 /* Pricing Ticket */
 #pricing {
@@ -2270,3 +1923,75 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #fff;
   border-color: #fff;
 }
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #nav-main li a.nav-link {
+    padding-top: 18px;
+  }
+  .services-item .icon i {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  
+  }
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-header {
+    width: 100%;
+  }
+  .navbar-brand {
+    position: absolute;
+    padding: 15px 15px;
+    top: 0;
+  }
+  .navbar-brand img {
+    width: 75%;
+  }
+  #mobile-menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+    text-align: center;
+  }
+  .slicknav_nav .active a {
+    background: #ce400d;
+    color: #fff;
+  }
+  .slicknav_nav a:hover, .slicknav_nav .active {
+    color: #ce400d;
+    background: #f5f5f5;
+  }
+  .slicknav_nav .dropdown li a.active {
+    background: #f5f5f5;
+    color: #ce400d;
+  }
+  .services-item .icon i {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  
+  }
+}
+
